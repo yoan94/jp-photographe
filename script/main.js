@@ -74,12 +74,12 @@ function parallaxSlider(scrollY, marge, element) {
 // ----------------------------
 
 let photoList = [
-    ["/static/img11.jpg", true],
-    ["/static/img5.jpg", false],
-    ["/static/img9.jpg", true],
-    ["/static/img10.jpg", true],
-    ["/static/img6.jpg", true],
-    ["/static/img1.jpg", false]
+    ["./static/img11.jpg", true],
+    ["./static/img5.jpg", false],
+    ["./static/img9.jpg", true],
+    ["./static/img10.jpg", true],
+    ["./static/img6.jpg", true],
+    ["./static/img1.jpg", false]
 ]
 function photoDefilement() {
     if(photoFooterActivated) {
