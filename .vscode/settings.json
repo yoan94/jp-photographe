@@ -1,0 +1,16 @@
+{
+    "livePugCompiler.savePath": "/build",
+    "liveServer.settings.root": "/build",
+    "liveServer.settings.mount": [
+        ["/static", "./static"],
+        ["/", "./fontello"],
+        ["/js", "./script"]
+    ],
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/build/css"
+        }
+    ]
+}

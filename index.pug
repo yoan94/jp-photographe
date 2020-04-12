@@ -1,0 +1,98 @@
+mixin icon(name)
+    i(class='icon-' + name)
+
+<!DOCTYPE html>
+html(lang="fr")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title 📸 JP Photographe 📸
+        link(rel="stylesheet", href="/css/iconfont.css")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+
+        main.container
+
+            nav#nav-bar
+                .content
+                    .left
+                        .title
+                            span JP
+                            span Photographe
+
+                    ul.right
+                        li: a.selected(href="#") Accueil
+                        li: a(href="#") Galerie
+                        li: a(href="#") Shop
+                        li: a(href="#contact") Contact
+                        
+            aside.distant-group
+                #bg-distant-1
+            
+            section#cover
+
+                h1.text
+                    p JP
+                    p Photographe
+
+                a.btn-scroll(href="#bg-photo-1")
+                    +icon("down-open")
+            
+            
+            
+            section.section#bg-photo-1
+                div
+
+            section.section#quality
+                h1 Qualité
+
+            section.section#bg-photo-2
+                div
+
+            section.section#professional
+                h1 Professionnel
+
+            //- section.section#description
+            //-     .content
+            //-         #img-1
+            //-         #img-2
+            //-         #img-3
+            //-         #img-4
+            //-         #txt-1 Animal
+            //-         #txt-2 Paysage
+            //-         #txt-3 Design
+
+            section.section#bg-photo-3
+                div
+
+            footer.section#footer
+                .bg
+                .fg
+                .contact#contact
+                    .title Nous contacter
+
+                    mixin input-zone(name, placeholder)
+                        div.input-zone
+                            input(type="text", name=name, id="input-"+name, required)
+                            label(for="input-"+name)= placeholder
+
+                    form#form-contact(action="/")
+                        +input-zone("name", "Votre nom / prénom", "text")
+                        +input-zone("email", "Votre email", "email")
+                        div.textarea-zone
+                            textarea#input-message(name="message", required, value="", onkeyup="this.setAttribute('value', this.value)")
+                            label(for="input-message") Votre message
+                        input(type="submit", value="Envoyer")
+
+                .content
+                    div © 2020 <span><b>JP</b> Photographe</span>. Tous droits réservés.
+                    div.social
+                        a(href="http://www.facebook.com", target="_blank")
+                            +icon("facebook-squared")
+                        a(href="http://www.twitter.com", target="_blank")
+                            +icon("twitter")
+                        a(href="http://www.instagram.com", target="_blank")
+                            +icon("instagram")
+
+
+        script(src="/js/main.js")
