@@ -127,7 +127,7 @@ a:hover {
 
 #cover {
   background-color: black;
-  background-image: url("/static/bg-cover.jpg");
+  background-image: url(../static/bg-cover.jpg);
   background-size: cover;
   background-position: top center;
   width: 100%;
@@ -212,7 +212,7 @@ a:hover {
   z-index: -10;
   width: 100%;
   height: 60vh;
-  background: url(/static/img2.jpg);
+  background: url(../static/img2.jpg);
   background-position-x: center;
   background-size: auto 130%;
   background-attachment: fixed;
@@ -249,7 +249,7 @@ a:hover {
   z-index: -10;
   width: 100%;
   height: 60vh;
-  background: url(/static/img4.jpg);
+  background: url(../static/img4.jpg);
   background-position-x: center;
   background-size: auto 130%;
   background-attachment: fixed;
@@ -291,7 +291,7 @@ a:hover {
   z-index: -10;
   width: 100%;
   height: 60vh;
-  background: url(/static/img12.jpg);
+  background: url(../static/img12.jpg);
   background-position-x: center;
   background-size: auto 130%;
   background-attachment: fixed;
@@ -378,7 +378,7 @@ a:hover {
 
 #footer .bg {
   background-color: black;
-  background-image: url(/static/img11.jpg);
+  background-image: url(../static/img11.jpg);
   background-size: cover;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);

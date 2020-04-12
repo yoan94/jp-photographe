@@ -172,7 +172,7 @@ a:hover {
 
 #cover {
     background-color: black;
-    background-image: url("/static/bg-cover.jpg");
+    background-image: url(../static/bg-cover.jpg);
     background-size: cover;
     background-position: top center;
     width: 100%;
@@ -279,7 +279,7 @@ $section-word-height: 15rem;
 }
 
 #bg-photo-1 {
-    @include section-bg-parallax(url(/static/img2.jpg));
+    @include section-bg-parallax(url(../static/img2.jpg));
 
     div {
         @media (min-aspect-ratio: 1560/797) {
@@ -298,7 +298,7 @@ $section-word-height: 15rem;
 }
 
 #bg-photo-2 {
-    @include section-bg-parallax(url(/static/img4.jpg));
+    @include section-bg-parallax(url(../static/img4.jpg));
 
     div {
         @media (min-aspect-ratio: 1314/714) {
@@ -320,7 +320,7 @@ $section-word-height: 15rem;
 }
 
 #bg-photo-3 {
-    @include section-bg-parallax(url(/static/img12.jpg));
+    @include section-bg-parallax(url(../static/img12.jpg));
 
     div {
         @media (min-aspect-ratio: 1400/797) {
@@ -354,7 +354,7 @@ $section-word-height: 15rem;
 
     .bg {
         background-color: black;
-        background-image: url(/static/img11.jpg);
+        background-image: url(../static/img11.jpg);
         background-size: cover;
         filter: grayscale(100%);
         height: $footer-height;
@@ -615,25 +615,25 @@ $section-word-height: 15rem;
 //     }
 
 //     #img-1 {
-//         @include img(url(/static/img1.jpg));
+//         @include img(url(../static/img1.jpg));
 //         // grid-column: 10 / span 3;
 //         // grid-row: 1 / span 3;
 //         grid-area: img1;
 //     }
 
 //     #img-2 {
-//         @include img(url(/static/img5.jpg));
+//         @include img(url(../static/img5.jpg));
 //         // grid-column: 1 / span 3;
 //         grid-area: img2;
 //     }
 
 //     #img-3 {
-//         @include img(url(/static/img6.jpg));
+//         @include img(url(../static/img6.jpg));
 //         grid-area: img3;
 //     }
 
 //     #img-4 {
-//         @include img(url(/static/img7.jpg));
+//         @include img(url(../static/img7.jpg));
 //         grid-area: img4;
 //     }
 
